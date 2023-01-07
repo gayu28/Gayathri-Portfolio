@@ -158,7 +158,7 @@
               <h2 class="mb-4 heading-h2"><span class="gsap-reveal">Sri Gayathri Devi </span></h2>
               <h3 class="mb-4 gsap-reveal"><span class="gsap-reveal">Computer Science Engineer</span></h3>
               <p class="lead gsap-reveal">A computer enthusiast, exploring the field for the past 6 years. I aspire to <a href="#"> engineer science and intelligence </a> to bring affordable innovations. </p>
-              <p class="mb-4 gsap-reveal">My primary interests are Cognitive-AI, Computational Neuroscience and extrapolating its applicaitions in to enhance healthcare and Immersive experiences</p>
+              <p class="mb-4 gsap-reveal">My primary interests are Cognitive-AI, Computational Neuroscience and extrapolating its applicaitions towards enhancing Healthcare and Immersive Experiences</p>
             <p class="gsap-reveal"><a href="images/Gayathri Resume.pdf" class="btn btn-outline-pill btn-custom-light" download>Download my CV</a></p>
             </div>
           </div>
@@ -587,28 +587,86 @@
 
 
           <div class="row justify-content-between">
+
+          
+<!-- Wrapper container -->
+      <div class="col-md-8">
+
+        <!-- Bootstrap 5 starter form -->
+        <form class="form-outline-style-v1" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+          <!-- Name input -->
+          <div class="col-lg-10 form-group gsap-reveal">
+            <label for="name">Name</label>
+            <input class="form-control" id="name" type="text"  data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+          </div>
+
+          <!-- Email address input -->
+          <div class="col-lg-10 form-group gsap-reveal">
+            <label for="emailAddress">Email Address</label>
+            <input class="form-control" id="emailAddress" type="email" data-sb-validations="required, email" />
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+          </div>
+
+          <!-- Message input -->
+          <div class="col-lg-10 form-group gsap-reveal">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" type="text" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+          </div>
+
+          <!-- Form submissions success message -->
+          
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">Your message was sent, thank you!</div>
+          </div>
+  
+          <!-- Form submissions error message -->
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3"></div>
+          </div>
+  
+          <!-- Form submit button -->
+          <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+          </div>
+        </form>
+        
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+      </div>
+
+<!-- SB Forms JS -->
             
-            <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm">
+            <!-- <div class="col-md-6">
+              <form class="form-outline-style-v1" id="contactForm" data-sb-form-api-token="API_TOKEN">
                 <div class="form-group row mb-0">
 
                   <div class="col-lg-6 form-group gsap-reveal">
                     <label for="name">Name</label>
-                    <input name="name" type="text" class="form-control" id="name">
+                    <input name="name" type="text" class="form-control" id="name" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                   </div>
                   <div class="col-lg-6 form-group gsap-reveal">
                     <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control" id="email">
+                    <input name="email" type="email" class="form-control" id="email" data-sb-validations="required, email" />
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                   <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
                   </div>
                   <div class="col-lg-12 form-group gsap-reveal">
-                    <label for="message">Write your message...</label>
-                    <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+                    <label for="message">Write your mesfffsage...</label>
+                    <textarea name="message" id="message" cols="30" rows="7" class="form-control" data-sb-validations="required"></textarea>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
                   </div>
                 </div>
                 <div class="form-group row gsap-reveal">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                      <span class="submitting"></span>
+                    <div class="col-md-12 d-flex align-items-center" >
+                       <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message"> -->
+                      <!-- <button class="btn btn-outline-pill btn-custom-light mr-3" id="submitButton" type="submit">Submit</button> -->
+
+                      <!-- <span class="submitting"></span>
                     </div>
                   </div>
               </form>
@@ -616,8 +674,9 @@
               <div id="form-message-success">
                 Your message was sent, thank you!
               </div>
+              <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
 
-            </div>
+            <!-- </div> -->
 
             <div class="col-md-4">
               <div class="contact-info-v1">
@@ -649,9 +708,9 @@
               <div class="footer-site-logo"><a href="#">Thanks for Visiting<span>.</span></a></div>
 
               <ul class="footer-site-social">
-                <li><a href="linkedin.com/in/srigayathridevi/">LinkedIn</a></li>
-                <li><a href="github.com/gayu28">Github</a></li>
-                <li><a href="#">Reddit</a></li>
+                <li><a href="http://linkedin.com/in/srigayathridevi/">LinkedIn</a></li>
+                <li><a href="http://github.com/gayu28">Github</a></li>
+                <li><a href="http://www.reddit.com/user/stark_in">Reddit</a></li>
 
               </ul>
 
